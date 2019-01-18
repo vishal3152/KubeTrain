@@ -1,0 +1,15 @@
+{
+  "name": "kubetrain",
+  "version": "1.0.0",
+  "description": "A demo app for training",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node ./app.js"
+  },
+  "author": "Vishal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.4"
+  }
+}
