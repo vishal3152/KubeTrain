@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-app
+  labels:
+    app: hello-app 
+    environment: dev
+spec:
+  containers:
+    - name: hello-app-container
+      image: vishal3152/kubetrain:latest
+      #command: ["sh", "-c"]
+      ports:
+        - containerPort: 4553
+   # - name: hello-app-container2
+   #   image: nginx
+   #   command: ["sh", "-c"]
+   #   ports:
+   #    - containerPort: 4553

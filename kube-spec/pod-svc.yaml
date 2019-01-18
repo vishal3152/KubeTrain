@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-app-svc
+  labels:
+    app: hello-app 
+    environment: dev
+spec:
+  type: NodePort
+  ports:
+    # the port that this service should serve on
+    - port: 4553
+      nodePort: 30036
+  # label keys and values that must match in order to receive traffic for this service
+  selector:
+    app: hello-app
