@@ -5,6 +5,7 @@ git clone https://github.com/vishal3152/KubeTrain.git
 
 ### Download dependencies
 cd KubeTrain
+
 npm install
  
 ### Build image:
